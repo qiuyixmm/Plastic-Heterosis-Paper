@@ -36,7 +36,7 @@ cd /gpfs/home/xumingmin/dir.xmm/mule_duck/01.major_revison/04.simulation/02.OV/0
 
 ## summary
 cd /gpfs/home/xumingmin/dir.xmm/mule_duck/01.major_revison/04.simulation/01.AL/05.read_assign
-bash make_summary.sh
+bash AL_make_summary.sh
 
 cd /gpfs/home/xumingmin/dir.xmm/mule_duck/01.major_revison/04.simulation/02.OV/05.read_assign
-bash make_summary.sh
+bash OV_make_summary.sh
