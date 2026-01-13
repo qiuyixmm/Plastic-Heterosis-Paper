@@ -1,36 +1,8 @@
-## Restoration of Ancestral Plasticity Contributes to Plastic Heterosis in Fatty liver of Hybrid Ducks
-### Overview  
-This repository contains scripts and pipelines used in the analysis of transcriptomic plasticity and heterosis in hybrid ducks.  
-
-### Workflow  
-**01.FastQC**：FastQC results for all RNA-seq samples  
-
-**02.parental transcriptomic analysis**: analyses applied to patental duck species, including：
--01.gene_expression_quantification.sh: quantify gene expression in parental species under two feeding conditions
--02.orthologous_genes_identification.sh: orthlogous genes inferences among Peking, Musocvy, and Goose
--03.ancestral_plasticity_inferences.sh: estimate evolutionary rate of hepatic transcriptome and infer ancestral gene expression levels
--04.adaptive_nonadpative_plasticity_inferences.R: indentify genes with adaptive and nonadaptive plasticity based on gene expression  
-
-**03.hybrid transcriptomic analysis**:
--01.gene_expression_quantification.sh: quantify gene expression in hybrid ducks under two feeding conditions
--02.calculate_heterosis_percentage.R: estimate the degree of heterosis in fatty liver development of hybrid ducks
--03.inheritance_modes_classification.R: classify modes of gene expression inheritance in hybrid ducks
--04.WGCNA.R: WGCNA analysis based on allele expression in hybrid ducks
-
-**04.simulation**:
--01.build_pseudo_hybrid.sh: downsample randomly to 50% both parental RNA-seq genataring pseudo-hybrid ducks
--02.pseudo_hybrid_align.sh: align RNA-seq reads of pseudo-hybrids to pseudo-haplotype-resovled hybrid genome
--03.haplotype_levles_stat.sh: estimate rate of read assignments properly to parental genomes
--04.allele_levels_stat.sh: estimate rate of read assignments properly to parental genes
-
-
-
-
 ## Restoration of Ancestral Plasticity Contributes to Plastic Heterosis in the Fatty Liver of Hybrid Ducks
 
 ### Overview
 
-This repository contains scripts and analysis pipelines used to investigate transcriptomic plasticity and heterosis in hybrid ducks, with a particular focus on fatty liver development under different feeding conditions.
+This repository contains scripts and analysis pipelines used to investigate transcriptomic plasticity and heterosis in hybrid ducks
 
 ---
 
@@ -74,7 +46,7 @@ Analyses applied to hybrid ducks, including:
   Classification of gene expression inheritance modes in hybrid ducks.
 
 - **04.WGCNA.R**  
-  Weighted Gene Co-expression Network Analysis (WGCNA) based on allele-specific expression in hybrid ducks.
+  Weighted Gene Co-expression Network Analysis (WGCNA) based on allele expression in hybrid ducks.
 
 ---
 
@@ -86,7 +58,7 @@ Simulation-based analyses, including:
   Construction of pseudo-hybrid ducks by randomly downsampling parental RNA-seq reads to 50%.
 
 - **02.pseudo_hybrid_align.sh**  
-  Alignment of pseudo-hybrid RNA-seq reads to a pseudo haplotype-resolved hybrid genome.
+  Alignment of pseudo-hybrid RNA-seq reads to the pseudo-haplotype-resolved hybrid genome.
 
 - **03.haplotype_levels_stat.sh**  
   Estimation of the proportion of reads correctly assigned to parental haplotypes.
