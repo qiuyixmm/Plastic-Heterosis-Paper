@@ -1,4 +1,4 @@
-## Restoration of Ancestral Plasticity Contributes to Plastic Heterosis in the Fatty Liver of Hybrid Ducks
+## Restoration of Parental Ancestral Plasticity Contributes to Plastic Heterosis in the Fatty Liver of Hybrid Ducks
 
 ### Overview
 
